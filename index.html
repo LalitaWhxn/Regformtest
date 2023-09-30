@@ -1,0 +1,120 @@
+<div class ="container">
+    <header class="header">
+        <title>2565 CGM48</title>
+        <h1 id="title" class="text-center">CGM48 Survey Form</h1>
+        <p id="description" class="description text-center">ขอบคุณผู้โดยสารทุกท่านที่ให้ความร่วมมือในการกรอกฟอร์มไปเรื่อยในครั้งนี้</p>
+        <link rel="stylesheet" href="style.css"/>
+    </header>
+
+    <body>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">ชื่อ</label>
+                <input type="text" id="name" class="form-control" placeholder="บอกชื่อหน่อยสิ อิอิ">
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="name">อีเมล</label>
+                <input type="email" id="email" class="form-control" placeholder="กรอกๆเต๊อะ อยากฮู้บ่ดาย"/> 
+            </div>
+
+                <div class="form-group">
+                    <label id="number-label" for="number">อายุ<span class="clue">(optional)</span>
+                    </label>
+                    <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="อายุไม่เกี่ยวใส่...ใส่ใจได้แต่มอง">
+                </div>
+
+                <div class="form-group">
+                    <p>คุณรู้จักใครใน CGM48 คนแรก</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select members</option>
+                        <option>Marmink</option>
+                        <option>Kaning</option>
+                        <option>Champoo</option>
+                        <option>Fortune</option>
+                        <option>Meen</option>
+                        <option>Nenie</option>
+                        <option>Parima</option>
+                        <option>Sita</option>
+                        <option>Angel</option>
+                    </select>
+                </div>
+
+                <div class="radio-choice">
+                    <p>คุณฟังเพลงและติดตามวง CGM48 บ่อยแค่ไหน? </p>
+                    <label>
+                        <input name="recommend-freeCodeCamp" value="definitely" type="radio" class="input-radio"/>บ่อยมาก</label>
+                        <label>
+                            <input name="recommend-freeCodeCamp" value="Maybe" type="radio" class="input-radio"/>บางครั้ง
+                        </label>
+                        <label>
+                            <input name="recommend-freeCodeCamp" value="Not sure" type="radio" class="input-radio"/>ไม่แน่ใจ
+                        </label>
+                </div>
+
+                <div class="form-group">
+                    <p>อะไรที่ทำให้คุณติดตามวง CGM48/สมาชิก CGM48</p>
+                    <select id="dropdown" name="favorite feature" class="form-control" required>
+                        <option selected value>อย่าลืมปั่นเพลง สันทรายคาวาอี้ และทุกๆเพลงนาจาาา</option>
+                        <option>เพราะความน่ารัก สดใส และความมุ่งมั่นพยายาม</option>
+                        <option>โดนป้ายยามา อิอิ</option>
+                        <option>เพลงเพราะดีบั่บ Original song ไรงี้</option>
+                        <option>โดนตกเพราะคู่ชิปนิดๆ (สาววายสมองไหลหมดแย้วว)</option>
+                        <option>ชอบพี่มารค์(มามิ้งค์) มากเลยค๊าา กรี๊ดดด หัวใจจ</option>
+                    </select>
+                </div>
+
+                <div>
+                <p>คุณชอบเพลงไหนมากที่สุดใน CGM48 <span>(ตอบได้มากกว่า 1 ข้อ)</span></p>
+                <label>
+                    <input name="improved" value="front-end Projects" type="checkbox"  class="input-checkbox"/>Chiang Mai 106
+                </label>
+                <label>
+                    <input name="improved" value="back-end Projects" type="checkbox"  class="input-checkbox"/>Melon Juice
+                </label>
+                <label>
+                    <input name="improved" value="data Visualization" type="checkbox"  class="input-checkbox"/>มะลิ
+                </label>
+                <label>
+                    <input name="improved" value="challenges" type="checkbox"  class="input-checkbox"/>Eien Pressure – ผูกพันนิรันดร์ 
+                </label>
+                <label>
+                    <input name="improved" value="open Source Community" type="checkbox"  class="input-checkbox"/>MAESHIKA MUKANEE - สุดเส้นทาง
+                </label>
+                <label>
+                    <input name="improved" value="gitter help rooms" type="checkbox"  class="input-checkbox"/>2565
+                </label>
+                <label>
+                    <input name="improved" value="videos" type="checkbox"  class="input-checkbox"/>Yume wa Nigenai - จะไม่หนีจากความฝัน
+                </label>
+                <label>
+                    <input name="improved" value="city Meetups" type="checkbox"  class="input-checkbox"/>Sansei Kawaii! - เธออะ Kawaii! 
+                </label>
+                <label>
+                    <input name="improved" value="wiki" type="checkbox" class="input-checkbox"/>Otona e no Michi - เส้นทางของผู้ใหญ่
+                </label>
+                <label>
+                    <input name="improved" value="forum" type="checkbox" class="input-checkbox"/>Anata ga Ite Kureta Kara (บ้านแห่งหัวใจ)
+                </label>
+                <label>
+                    <input name="improved" value="additional Courses" type="checkbox" class="input-checkbox"/>Onegai Valentine
+                </label>
+                <label>
+                    <input name="improved" value="additional Courses" type="checkbox" class="input-checkbox"/>Chain of love
+                </label>
+                </div>
+
+                <div class="form-group">
+                    <p>มีอะไรอยากฝากบอก CGM48 ไหม</p>
+                    <textarea id="comments" class="input-textarea"
+                      name="comment"
+                      placeholder="เขียนสักนิดสักหน่อยม้ายย นิดนึงก็ด้ะๆ"
+                    ></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                      Submit
+                    </button>
+                  </div>
+        </form>
+    </body>
+</div>
